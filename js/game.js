@@ -99,7 +99,6 @@ function restartGameButton() {
   document.getElementById('restart-btn').style = 'display: none';
 }
 
-
 /**
  * Check if the user presses a botton on the keyboard and update Keyboard object:
  */
