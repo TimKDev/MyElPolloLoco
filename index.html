@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Pollo Loco</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="js/Classes/Controller/keyboard.class.js" defer></script>
+  <script src="js/Classes/View/canvas.class.js" defer></script>
+  <script src="js/Classes/Controller/world.class.js" defer></script>
+  <script src="js/Classes/level.class.js" defer></script>
+  <script src="js/Classes/Model/box.class.js" defer></script>
+  <script src="js/Classes/Model/drawable-object.class.js" defer></script>
+  <script src="js/Classes/Model/DrawableObjects/status-bar.class.js" defer></script>
+  <script src="js/Classes/Model/DrawableObjects/background-objects.class.js" defer></script>
+  <script src="js/Classes/Model/collectable-objects.class.js" defer></script>
+  <script src="js/Classes/Model/CollectableObjects/coins.class.js" defer></script>
+  <script src="js/Classes/Model/CollectableObjects/hearts.class.js" defer></script>
+  <script src="js/Classes/Model/CollectableObjects/bottle-collect.class.js" defer></script>
+  <script src="js/Classes/Model/movable-object.class.js" defer></script>
+  <script src="js/Classes/Model/MovableObjects/cloud.class.js" defer></script>
+  <script src="js/Classes/Model/MovableObjects/bottle.class.js" defer></script>
+  <script src="js/Classes/Model/living-objects.class.js" defer></script>
+  <script src="js/Classes/Model/LivingObjects/character.class.js" defer></script>
+  <script src="js/Classes/Model/LivingObjects/chicken.class.js" defer></script>
+  <script src="js/Classes/Model/LivingObjects/endboss.class.js" defer></script>
+  <script src="js/Classes/Model/LivingObjects/yellow-chicken.class.js" defer></script>
+  <script src="js/Levels/level1.js" defer></script>
+  <script src="js/game.js" defer></script>
+</head>
+
+<body onload="init()">
+  <div class="main-div">
+    <h1 class="hide-mobile">El Pollo Loco</h1>
+    <h2 class="hide-mobile-first">A spanish jump and run game</h2>
+    <div>
+      <canvas width="1000" height="480" id="canvas"></canvas>
+      <div class="rules-icons-div hide-mobile-second">
+        <div class="rules-div">
+          <table class="table-rules">
+            <tr>
+              <th>Action</th>
+              <th>Keyboard</th>
+            </tr>
+            <tr>
+              <td>Move left</td>
+              <td>LEFT</td>
+            </tr>
+            <tr>
+              <td>Move right</td>
+              <td>RIGHT</td>
+            </tr>
+            <tr>
+              <td>Jump</td>
+              <td>SPACE</td>
+            </tr>
+            <tr>
+              <td>Throw Bottle</td>
+              <td>D</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="icons-div" style="display: none;" id="icons-div">
+          <img src="img/icons/pause-button.png" onclick="pauseGameButton()" id="pause-btn" class="icons">
+          <img src="img/icons/play-button.png" onclick="restartGameButton()" id="restart-btn" style="display: none;"
+            class="icons">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
