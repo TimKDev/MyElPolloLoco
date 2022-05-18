@@ -155,8 +155,49 @@ window.addEventListener('keyup', (event) => {
 });
 
 
+/**
+ * Add funktionality for touch buttons needed to play the game with a smartphone: 
+ */
 
+// Start Game:
+document.getElementById('canvas').addEventListener('touchstart', () => {
+  keyboard.SPACE = true;
+});
+document.getElementById('canvas').addEventListener('touchend', () => {
+  keyboard.SPACE = false;
+});
 
+// Move left:
+document.getElementById('left-btn').addEventListener('touchstart', () => {
+  keyboard.LEFT = true;
+});
+document.getElementById('left-btn').addEventListener('touchend', () => {
+  keyboard.LEFT = false;
+});
+
+// Move right:
+document.getElementById('right-btn').addEventListener('touchstart', () => {
+  keyboard.RIGHT = true;
+});
+document.getElementById('right-btn').addEventListener('touchend', () => {
+  keyboard.RIGHT = false;
+});
+
+// Jump:
+document.getElementById('up-btn').addEventListener('touchstart', () => {
+  keyboard.SPACE = true;
+});
+document.getElementById('up-btn').addEventListener('touchend', () => {
+  keyboard.SPACE = false;
+});
+
+// Throw bottle:
+document.getElementById('throw-btn').addEventListener('touchstart', () => {
+  keyboard.D = true;
+});
+document.getElementById('throw-btn').addEventListener('touchend', () => {
+  keyboard.D = false;
+});
 
 
 

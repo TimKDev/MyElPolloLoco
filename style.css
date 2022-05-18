@@ -104,9 +104,35 @@ h2 {
   }
 }
 
+.btn {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 3px solid black;
+  padding: 1px;
+}
 
+.canvas-div {
+  position: relative;
+}
 
+.btn-leftSide {
+  position: absolute;
+  bottom: 5px;
+  left: 30px;
+}
 
+.btn-rightSide {
+  position: absolute;
+  bottom: 5px;
+  right: 30px;
+}
 
+#left-btn {
+  margin-right: 10px;
+}
 
-
+#up-btn {
+  margin-right: 10px;
+}
