@@ -1,8 +1,8 @@
 function createLevel() {
-  world.level = new Level(7);
+  world.level = new Level(5);
 
   world.level.addEnemies([
-    new Endboss(4000),
+    new Endboss(3000),
     new Chicken(),
     new Chicken(),
     new Chicken(),
@@ -21,33 +21,6 @@ function createLevel() {
     new Chicken(),
     new Chicken(),
     new Chicken(),
-    new Chicken(),
-    new Chicken(),
-    new Chicken(),
-    new Chicken(),
-    new Chicken(),
-    new Chicken(),
-    new Chicken(),
-    new Chicken(),
-    new Chicken(),
-    new Chicken(),
-    new Chicken(),
-    new YellowChicken(),
-    new YellowChicken(),
-    new YellowChicken(),
-    new YellowChicken(),
-    new YellowChicken(),
-    new YellowChicken(),
-    new YellowChicken(),
-    new YellowChicken(),
-    new YellowChicken(),
-    new YellowChicken(),
-    new YellowChicken(),
-    new YellowChicken(),
-    new YellowChicken(),
-    new YellowChicken(),
-    new YellowChicken(),
-    new YellowChicken(),
     new YellowChicken(),
     new YellowChicken(),
     new YellowChicken(),
@@ -68,8 +41,8 @@ function createLevel() {
     new Cloud()
   ]);
   
-  world.level.addCoins(30, 10);
-  world.level.addHearths(10, 4);
+  world.level.addCoins(20, 5);
+  world.level.addHearths(10, 2);
   world.level.addBottles(25);
 }
 
