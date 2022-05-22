@@ -136,3 +136,19 @@ h2 {
 #up-btn {
   margin-right: 10px;
 }
+
+.mobile-hide {
+  display: none;
+}
+
+@media(max-width: 600px){
+  .mobile-hide {
+    display: unset;
+  }
+}
+
+@media(max-height: 600px){
+  .mobile-hide {
+    display: unset;
+  }
+}
